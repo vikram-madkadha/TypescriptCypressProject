@@ -7,6 +7,7 @@ Create repository on GitHub:
 - Click the "+" icon on the top-right → Select "New repository”
 - Give your repo a name, choose public or private, and do not initialize with a README (since you already have code locally).
 - Click "Create repository”
+  
 Open Terminal or Command Prompt: 
 - Navigate to your project folder: cd path/to/your/project
 - Initialize Git in Your Project (if not already): git init
