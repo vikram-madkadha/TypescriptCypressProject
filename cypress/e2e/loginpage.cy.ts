@@ -3,6 +3,6 @@ describe('Login Page', () =>{
         cy.visit('https://stg.risebuildings.com');
 })
 it('login postive case', ()=>{
-    
+
 })
 })
