@@ -2,6 +2,8 @@ describe("Login to Save config", () => {
   afterEach(() => {
     cy.get("[data-test='profileLink']").click();
    cy.get("[data-test='logoutButton']").click();
+   cy.clearAllCookies
+   cy.wait(5000);
   });
   it("tests Login to Save config", () => {
     cy.viewport(1512, 1512);
@@ -13,6 +15,8 @@ describe("Login to Save config", () => {
       cy.get("#password").type("Password@123");
       cy.get("button._button-login-password").click();
     })  
+    cy.wait(5000);
+    cy.url().should('eq', 'https://s.activate.vts.com/l/home');
     cy.get(".clickableAreaItyVD").click();
     cy.get("input[placeholder='Search']").click();
     cy.get("input").type("genea test");
