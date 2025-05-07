@@ -33,3 +33,5 @@ export default defineConfig({
     specPattern: ['cypress/e2e/BDD/*.feature', 'cypress/e2e/*.cy.ts'],
     },
   });
+
+   
