@@ -14,6 +14,7 @@ cy.intercept({
         }]
 }).as('bookListResponse');
 cy.get('button[class="btn btn-primary"]').click();
+cy.log("Hello This one is the new change");
 cy.wait('@bookListResponse').then(({ request, response }) => {
     if (response && response.body) {
         cy.get('tr').should('have.length', response.body.length + 1);
